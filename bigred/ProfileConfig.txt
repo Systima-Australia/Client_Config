@@ -1,0 +1,19 @@
+DockVersion:050124
+
+apps:
+Google Chrome
+Microsoft Outlook
+Microsoft Word
+Microsoft Excel
+Microsoft PowerPoint
+Microsoft OneNote
+Figma
+ClickUp
+Adobe Photoshop 2023/Adobe Photoshop 2023
+Adobe Illustrator 2023/Adobe Illustrator 2023
+Adobe InDesign 2023/Adobe InDesign 2023
+Microsoft Teams*
+Slack
+zoom.us
+FortiClient
+Spotify
