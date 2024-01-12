@@ -24,7 +24,6 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
-osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 defaults write com.apple.finder FXPreferredViewStyle Nlsv; defaults write com.apple.finder CreateDesktop -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
