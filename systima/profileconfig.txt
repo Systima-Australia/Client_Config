@@ -39,5 +39,5 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
-osascript:
+applescript:
 osascript -e "tell app \"System Events\" to tell appearance preferences to set dark mode to true"
