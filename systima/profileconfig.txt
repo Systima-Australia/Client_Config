@@ -19,23 +19,23 @@ FortiClient
 Spotify
 
 settings:
-osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
-defaults write com.apple.finder ShowStatusBar -bool true
-defaults write NSGlobalDomain AppleInterfaceStyle Dark
-defaults write com.apple.finder FXPreferredViewStyle Nlsv; defaults write com.apple.finder CreateDesktop -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-defaults write com.apple.loginwindow TALLogoutSavesState -bool false
-defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
-defaults write com.apple.finder ShowStatusBar -bool true
-defaults write com.apple.finder ShowPathbar -bool true
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+sudo -u "$Username" osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
+sudo -u "$Username" defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+sudo -u "$Username" defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+sudo -u "$Username" defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+sudo -u "$Username" defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+sudo -u "$Username" defaults write com.apple.finder ShowStatusBar -bool true
+sudo -u "$Username" defaults write NSGlobalDomain AppleInterfaceStyle Dark
+sudo -u "$Username" defaults write com.apple.finder FXPreferredViewStyle Nlsv; defaults write com.apple.finder CreateDesktop -bool true
+sudo -u "$Username" defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+sudo -u "$Username" defaults write com.apple.LaunchServices LSQuarantine -bool false
+sudo -u "$Username" defaults write com.apple.loginwindow TALLogoutSavesState -bool false
+sudo -u "$Username" defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
+sudo -u "$Username" defaults write NSGlobalDomain AppleFontSmoothing -int 2
+sudo -u "$Username" defaults write com.apple.finder ShowStatusBar -bool true
+sudo -u "$Username" defaults write com.apple.finder ShowPathbar -bool true
+sudo -u "$Username" defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+sudo -u "$Username" defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+sudo -u "$Username" defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+sudo -u "$Username" defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+sudo -u "$Username" defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
