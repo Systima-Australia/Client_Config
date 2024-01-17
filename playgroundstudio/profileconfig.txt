@@ -7,16 +7,13 @@ Microsoft Word
 Microsoft Excel
 Microsoft PowerPoint
 Microsoft OneNote
-Figma
-ClickUp
 Adobe Photoshop 2024/Adobe Photoshop 2024
 Adobe Illustrator 2024/Adobe Illustrator 2024
 Adobe InDesign 2024/Adobe InDesign 2024
+Dropbox
 Microsoft Teams*
 Slack
 zoom.us
-FortiClient
-Spotify
 
 settings:
 osascript -e "tell app \"System Events\" to tell appearance preferences to set dark mode to true"
