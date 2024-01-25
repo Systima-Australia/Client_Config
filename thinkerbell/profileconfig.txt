@@ -2,21 +2,17 @@ DockVersion:050124
 
 apps:
 Google Chrome
-Microsoft Outlook
 Microsoft Word
 Microsoft Excel
 Microsoft PowerPoint
-Microsoft OneNote
-Figma
-ClickUp
+Microsoft Teams classic
+Microsoft Teams
 Adobe Photoshop 2024/Adobe Photoshop 2024
 Adobe Illustrator 2024/Adobe Illustrator 2024
 Adobe InDesign 2024/Adobe InDesign 2024
-Microsoft Teams*
 Slack
 zoom.us
 FortiClient
-Spotify
 
 settings:
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
