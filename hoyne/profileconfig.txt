@@ -6,17 +6,16 @@ Microsoft Outlook
 Microsoft Word
 Microsoft Excel
 Microsoft PowerPoint
-Microsoft OneNote
-Figma
-ClickUp
+Microsoft Teams
 Adobe Photoshop 2024/Adobe Photoshop 2024
 Adobe Illustrator 2024/Adobe Illustrator 2024
 Adobe InDesign 2024/Adobe InDesign 2024
-Microsoft Teams*
+Adobe Premiere Pro 2024/Adobe Premiere Pro 2024
+Connect Fonts
+Figma
 Slack
 zoom.us
 FortiClient
-Spotify
 
 settings:
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
