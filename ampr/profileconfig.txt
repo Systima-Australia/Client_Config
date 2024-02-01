@@ -8,7 +8,7 @@ Microsoft Excel
 Microsoft PowerPoint
 Microsoft OneNote
 Adobe InDesign 2024/Adobe InDesign 2024
-Microsoft Teams*
+Microsoft Teams
 Slack
 zoom.us
 FortiClient
