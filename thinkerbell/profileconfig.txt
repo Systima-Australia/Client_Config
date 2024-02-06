@@ -35,6 +35,6 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 systemsettings:
-"tell app \"System Events\" to tell appearance preferences to set dark mode to true"
-"tell application \"System Events\" to set picture of every desktop to \"/Users/Shared/systima.png\" as POSIX file"
-"tell application \"Finder\" to set desktop picture to POSIX file \"/Users/Shared/systima.png\""
+tell app \"System Events\" to tell appearance preferences to set dark mode to true
+tell application \"System Events\" to set picture of every desktop to \"/Users/Shared/systima.png\" as POSIX file
+tell application \"Finder\" to set desktop picture to POSIX file \"/Users/Shared/systima.png\"
