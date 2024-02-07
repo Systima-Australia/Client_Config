@@ -17,7 +17,7 @@ Slack
 zoom.us
 FortiClient
 
-settings:
+usersettings:
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
@@ -37,4 +37,8 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
-osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
+
+systemsettings:
+tell app \"System Events\" to tell appearance preferences to set dark mode to true
+tell application \"System Events\" to set picture of every desktop to \"/Users/Shared/thinkerbell.png\" as POSIX file
+tell application \"Finder\" to set desktop picture to POSIX file \"/Users/Shared/thinkerbell.png\"
