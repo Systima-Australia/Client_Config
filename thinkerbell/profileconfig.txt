@@ -26,8 +26,11 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 defaults write com.apple.finder ShowStatusBar -bool true
-defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="http";LSHandlerRoleAll="com.google.chrome";LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="https";LSHandlerRoleAll="com.google.chrome";LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.url;LSHandlerRoleAll=com.google.chrome;LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="mailto";LSHandlerRoleAll="com.microsoft.outlook";LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
