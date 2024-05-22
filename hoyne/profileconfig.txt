@@ -38,3 +38,5 @@ defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandle
 defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="https";LSHandlerRoleAll="com.google.chrome";LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
 defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.url;LSHandlerRoleAll=com.google.chrome;LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
 defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="mailto";LSHandlerRoleAll="com.microsoft.outlook";LSHandlerPreferredVersions={LSHandlerRoleAll="-";};}'
+defaults write com.centrastage.tray.plist "NSStatusItem Visible Item-0" -bool false
+defaults write com.centrastage.tray.plist "NSStatusItem Preferred Position Item-0" -float 0.0

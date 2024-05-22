@@ -34,3 +34,5 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+defaults write com.centrastage.tray.plist "NSStatusItem Visible Item-0" -bool false
+defaults write com.centrastage.tray.plist "NSStatusItem Preferred Position Item-0" -float 0.0
