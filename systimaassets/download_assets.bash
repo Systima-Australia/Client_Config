@@ -10,11 +10,9 @@ downloadAssets() {
 
     # Install Xcode Command Line Tools if not installed
     installxcode() {
-        progessDialog "Retrieving critical tools, please wait...\n\nThis may take a few minutes"
         touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
         softwareupdate -l | grep "Label: Command Line Tools" | sed -e 's/^.*Label: //' -e 's/^ *//' | tr -d '\n' | xargs echo | sudo -n -S softwareupdate -i -a
         rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-        dialogUpdate "quit:"
     }
     [[ ! $(xcode-select -p) ]] && installxcode
 
