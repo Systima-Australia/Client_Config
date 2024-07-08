@@ -16,6 +16,7 @@ downloadAssets() {
     }
     [[ ! $(xcode-select -p) ]] && installxcode
 
+    # Download or update assets
     [[ ! -d "$localDir" ]] && { # Download Assets
         mkdir -p "$localDir"
         git clone "$github" "$localDir"
@@ -23,7 +24,8 @@ downloadAssets() {
         cd "$localDir"
         git pull
     }
-    # Set permissions
+
+    # Set permissions for the local directory
     sudo chown root:wheel "$localDir"
     sudo chmod 755 "$localDir"
     sudo chmod -R a+r "$localDir"
