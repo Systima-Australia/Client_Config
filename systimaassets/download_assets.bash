@@ -4,6 +4,7 @@
 downloadAssets() {
     # App to update
     repo="$1"
+    echo "Downloading $repo..."
     localDir="/Library/Application Support/Systima/$repo"
     # Set the GitHub repository URL and the local directory path
     github="https://github.com/Systima-Australia/$repo.git"
