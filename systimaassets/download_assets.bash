@@ -31,7 +31,7 @@ downloadAssets() {
         sudo chmod a+rx -R "$localDir"
     } || { # Update Assets
         cd "$localDir"
-        git pull
+        git pull "$github"
         sudo chmod a+rx -R "$localDir"
     }
 
