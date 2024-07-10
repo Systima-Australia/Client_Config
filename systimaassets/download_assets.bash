@@ -29,14 +29,12 @@ downloadAssets() {
     [[ ! -d "$localDir" ]] && { # Download Assets
         mkdir -p "$localDir"
         git clone "$github" "$localDir"
-        sudo chmod a+rx -R "$localDir"
     } || { # Update Assets
-        cd "$localDir"
-        git pull "$github" "$localDir"
-        sudo chmod a+rx -R "$localDir"
+        cd "$localDir" || exit
+        git pull
     }
 
     # Set permissions for the local directory
     sudo chown -R root:wheel "$localDir"
-    sudo chmod a+rx -R "$localDir"
-}
+    sudo chmod -R a+rx "$localDir"
+} ; downloadAssets "macosicons"
