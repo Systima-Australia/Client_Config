@@ -37,4 +37,4 @@ downloadAssets() {
     # Set permissions for the local directory
     sudo chown -R root:wheel "$localDir"
     sudo chmod -R a+rx "$localDir"
-} ; downloadAssets "macosicons"
+}
