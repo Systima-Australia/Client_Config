@@ -10,6 +10,14 @@ downloadAssets() {
 
     # Install Xcode Command Line Tools if not installed
     installxcode() {
+        # Display swiftDialog Notification
+        /usr/local/bin/dialog \
+        --notification \
+        --title "Systima Tools are downloading..." \
+        --message "Some Self Service tasks may be paused until this is complete"
+
+        # Install Xcode Command Line Tools
+        echo "Installing Xcode Command Line Tools"
         touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
         softwareupdate -l | grep "Label: Command Line Tools" | sed -e 's/^.*Label: //' -e 's/^ *//' | tr -d '\n' | xargs echo | sudo -n -S softwareupdate -i -a
         rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
@@ -20,13 +28,14 @@ downloadAssets() {
     [[ ! -d "$localDir" ]] && { # Download Assets
         mkdir -p "$localDir"
         git clone "$github" "$localDir"
+        sudo chmod a+rx -R "$localDir"
     } || { # Update Assets
         cd "$localDir"
         git pull
+        sudo chmod a+rx -R "$localDir"
     }
 
     # Set permissions for the local directory
-    sudo chown root:wheel "$localDir"
-    sudo chmod 755 "$localDir"
-    sudo chmod -R a+r "$localDir"
+    sudo chown -R root:wheel "$localDir"
+    sudo chmod a+rx -R "$localDir"
 }
