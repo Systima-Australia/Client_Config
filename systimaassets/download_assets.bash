@@ -6,8 +6,6 @@ downloadAssets() {
     repo="$1"
     echo "Downloading $repo..."
     localDir="/Library/Application Support/Systima/$repo"
-    # Set the GitHub repository URL and the local directory path
-    github="https://github.com/Systima-Australia/$repo.git"
 
     # Install Xcode Command Line Tools if not installed
     installxcode() {
@@ -28,7 +26,7 @@ downloadAssets() {
     # Download or update assets
     [[ ! -d "$localDir" ]] && { # Download Assets
         mkdir -p "$localDir"
-        git clone "$github" "$localDir"
+        git clone "https://github.com/Systima-Australia/$repo.git" "$localDir"
     } || { # Update Assets
         cd "$localDir" || exit
         git pull
@@ -36,5 +34,5 @@ downloadAssets() {
 
     # Set permissions for the local directory
     sudo chown -R root:wheel "$localDir"
-    sudo chmod -R a+rx "$localDir"
+    sudo chmod -R 755 "$localDir"
 }
