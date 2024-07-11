@@ -24,15 +24,20 @@ downloadAssets() {
     [[ ! $(xcode-select -p) ]] && installxcode
 
     # Download or update assets
-    [[ ! -d "$localDir" ]] && { # Download Assets
-        mkdir -p "$localDir"
+    [[ ! -d "$localDir/.git" ]] && { # Download Assets
+        [[ ! -d "$localDir" ]] ; { mkdir -p "$localDir" ; sudo chown -R root:wheel "$localDir" ; sudo chmod -R 755 "$localDir" ; }
         git clone "https://github.com/Systima-Australia/$repo.git" "$localDir"
     } || { # Update Assets
         cd "$localDir" || exit
         git pull
     }
 
+    [[ ! -d "$localDir/.git" ]] && {
+        # Clone the repo to $localDir
+        git clone "https://github.com/Systima-Australia/$repo.git" "$localDir"
+    }
+
     # Set permissions for the local directory
     sudo chown -R root:wheel "$localDir"
     sudo chmod -R 755 "$localDir"
-}
+} ; downloadAssets "macosicons"
