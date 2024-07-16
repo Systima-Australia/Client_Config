@@ -23,7 +23,7 @@ downloadAssets() {
     [[ ! $(xcode-select -p) ]] && installxcode
 
     # Download or update assets
-    echo -e "\n    -------${gitRepo} START"
+    echo -e "\n    ----${gitRepo} START"
     # Check if Git repo files exist
     [[ ! -d "${localDir}/.git" ]] && {
         [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder"; mkdir -p "${localDir}" # If the folder does not exist, make it
@@ -32,11 +32,11 @@ downloadAssets() {
     } || { # Update Assets
         echo "    Checking ${gitRepo} for updates"
         git -C "${localDir}" fetch origin master # Fetch the latest changes from the remote
-git -C "${localDir}" reset --hard origin/master # Reset the local files to match the remote repository state
+        git -C "${localDir}" reset --hard origin/master # Reset the local files to match the remote repository state
     }
 
     # Set permissions for the local directory
     sudo chown -R root:wheel "${localDir}"
     sudo chmod -R 755 "${localDir}"
-    echo -e "    -------${gitRepo} END\n"
+    echo -e "    ----${gitRepo} END\n"
 }
