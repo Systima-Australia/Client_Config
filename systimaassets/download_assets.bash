@@ -3,9 +3,8 @@
 # Download or update Systima assets from GitHub
 downloadAssets() {
     # App to update
-    repo="$1"
-    echo "Downloading $repo..."
-    localDir="/Library/Application Support/Systima/$repo"
+    local gitRepo="${1}"
+    local localDir="/Library/Application Support/Systima/${gitRepo}"
 
     # Install Xcode Command Line Tools if not installed
     installxcode() {
@@ -24,20 +23,19 @@ downloadAssets() {
     [[ ! $(xcode-select -p) ]] && installxcode
 
     # Download or update assets
-    [[ ! -d "$localDir/.git" ]] && { # Download Assets
-        [[ ! -d "$localDir" ]] ; { mkdir -p "$localDir" ; sudo chown -R root:wheel "$localDir" ; sudo chmod -R 755 "$localDir" ; }
-        git clone "https://github.com/Systima-Australia/$repo.git" "$localDir"
+    echo -e "\n-------${gitRepo} START"
+    # Check if Git repo files exist
+    [[ ! -d "${localDir}/.git" ]] && {
+        [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder"; mkdir -p "${localDir}" # If the folder does not exist, make it
+        echo "Cloning ${gitRepo} to ${localDir}"
+        git clone "https://github.com/Systima-Australia/${gitRepo}" "${localDir}"
     } || { # Update Assets
-        cd "$localDir" || exit
-        git pull
-    }
-
-    [[ ! -d "$localDir/.git" ]] && {
-        # Clone the repo to $localDir
-        git clone "https://github.com/Systima-Australia/$repo.git" "$localDir"
+        echo "Checking ${gitRepo} for updates"
+        git -C "${localDir}" pull
     }
 
     # Set permissions for the local directory
-    sudo chown -R root:wheel "$localDir"
-    sudo chmod -R 755 "$localDir"
-} ; downloadAssets "macosicons"
+    sudo chown -R root:wheel "${localDir}"
+    sudo chmod -R 755 "${localDir}"
+    echo -e "-------${gitRepo} END\n"
+}
