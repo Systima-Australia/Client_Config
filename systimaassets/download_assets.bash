@@ -26,13 +26,12 @@ downloadAssets() {
     echo -e "\n    ----${gitRepo} START"
     # Check if Git repo files exist
     [[ ! -d "${localDir}/.git" ]] && {
-        [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder"; mkdir -p "${localDir}" # If the folder does not exist, make it
+        [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder" && mkdir -p "${localDir}" # If the folder does not exist, make it
         echo "    Cloning ${gitRepo} to ${localDir}"
         git clone "https://github.com/Systima-Australia/${gitRepo}" "${localDir}"
-    } || { # Update Assets
+    } || {
         echo "    Checking ${gitRepo} for updates"
-        git -C "${localDir}" fetch origin master # Fetch the latest changes from the remote
-        git -C "${localDir}" reset --hard origin/master # Reset the local files to match the remote repository state
+        git -C "${localDir}" fetch origin master && git -C "${localDir}" reset --hard origin/master # Fetch the latest changes from the remote and reset the local files to match the remote repository state
     }
 
     # Set permissions for the local directory
