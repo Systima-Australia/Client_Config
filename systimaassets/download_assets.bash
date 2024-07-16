@@ -31,7 +31,7 @@ downloadAssets() {
         git clone "https://github.com/Systima-Australia/${gitRepo}" "${localDir}"
     } || {
         echo "    Checking ${gitRepo} for updates"
-        git -C "${localDir}" fetch origin master && git -C "${localDir}" reset --hard origin/master # Fetch the latest changes from the remote and reset the local files to match the remote repository state
+        git -C "${localDir}" fetch origin main && git -C "${localDir}" reset --hard origin/main # Fetch the latest changes from the remote and reset the local files to match the remote repository state
     }
 
     # Set permissions for the local directory
