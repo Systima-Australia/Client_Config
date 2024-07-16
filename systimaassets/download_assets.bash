@@ -3,8 +3,8 @@
 # Download or update Systima assets from GitHub
 downloadAssets() {
     # App to update
-    local gitRepo="${1}"
-    local localDir="/Library/Application Support/Systima/${gitRepo}"
+    gitRepo="${1}"
+    localDir="/Library/Application Support/Systima/${gitRepo}"
 
     # Install Xcode Command Line Tools if not installed
     installxcode() {
@@ -23,7 +23,7 @@ downloadAssets() {
     [[ ! $(xcode-select -p) ]] && installxcode
 
     # Download or update assets
-    echo -e "\n-------${gitRepo} START"
+    echo -e "\n    -------${gitRepo} START"
     # Check if Git repo files exist
     [[ ! -d "${localDir}/.git" ]] && {
         [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder"; mkdir -p "${localDir}" # If the folder does not exist, make it
@@ -37,5 +37,5 @@ downloadAssets() {
     # Set permissions for the local directory
     sudo chown -R root:wheel "${localDir}"
     sudo chmod -R 755 "${localDir}"
-    echo -e "-------${gitRepo} END\n"
+    echo -e "    -------${gitRepo} END\n"
 }
