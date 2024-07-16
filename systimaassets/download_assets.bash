@@ -27,10 +27,10 @@ downloadAssets() {
     # Check if Git repo files exist
     [[ ! -d "${localDir}/.git" ]] && {
         [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder"; mkdir -p "${localDir}" # If the folder does not exist, make it
-        echo "Cloning ${gitRepo} to ${localDir}"
+        echo "    Cloning ${gitRepo} to ${localDir}"
         git clone "https://github.com/Systima-Australia/${gitRepo}" "${localDir}"
     } || { # Update Assets
-        echo "Checking ${gitRepo} for updates"
+        echo "    Checking ${gitRepo} for updates"
         git -C "${localDir}" fetch
     }
 
