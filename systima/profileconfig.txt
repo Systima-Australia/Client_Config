@@ -2,15 +2,9 @@ DockVersion:050124
 
 apps:
 Google Chrome
-Microsoft Outlook
-Microsoft Word
-Microsoft Excel
-Microsoft PowerPoint
-Microsoft OneNote
-Adobe Photoshop 2024/Adobe Photoshop 2024
-Adobe Illustrator 2024/Adobe Illustrator 2024
-Adobe InDesign 2024/Adobe InDesign 2024
 iMazing Profile Editor
+iTerm
+Visual Studio Code
 Microsoft Teams
 Slack
 zoom.us
