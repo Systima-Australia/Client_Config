@@ -4,7 +4,6 @@
 <dict>
     <key>DockVersion</key>
     <string>050124</string>
-    
     <key>apps</key>
     <array>
         <string>Google Chrome</string>
@@ -17,7 +16,6 @@
         <string>FortiClient</string>
         <string>Spotify</string>
     </array>
-    
     <key>usersettings</key>
     <dict>
         <key>defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true</key>
