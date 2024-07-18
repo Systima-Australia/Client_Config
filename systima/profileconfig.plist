@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>DockVersion</key>
+    <string>050124</string>
+    
+    <key>apps</key>
+    <array>
+        <string>Google Chrome</string>
+        <string>iMazing Profile Editor</string>
+        <string>iTerm</string>
+        <string>Visual Studio Code</string>
+        <string>Microsoft Teams</string>
+        <string>Slack</string>
+        <string>zoom.us</string>
+        <string>FortiClient</string>
+        <string>Spotify</string>
+    </array>
+    
+    <key>usersettings</key>
+    <dict>
+        <key>defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true</key>
+        <true/>
+        <key>defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true</key>
+        <true/>
+        <key>defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true</key>
+        <true/>
+        <key>defaults write com.apple.finder ShowMountedServersOnDesktop -bool true</key>
+        <true/>
+        <key>defaults write com.apple.finder ShowStatusBar -bool true</key>
+        <true/>
+        <key>defaults write com.apple.finder FXPreferredViewStyle clmv</key>
+        <true/>
+        <key>defaults write NSGlobalDomain AppleInterfaceStyle Dark</key>
+        <true/>
+        <key>defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true</key>
+        <true/>
+        <key>defaults write com.apple.LaunchServices LSQuarantine -bool false</key>
+        <true/>
+        <key>defaults write com.apple.loginwindow TALLogoutSavesState -bool false</key>
+        <true/>
+        <key>defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false</key>
+        <true/>
+        <key>defaults write com.apple.finder ShowStatusBar -bool true</key>
+        <<true/>
+        <key>defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true</key>
+        <true/>
+        <key>defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true</key>
+        <true/>
+        <key>defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true</key>
+        <true/>
+        <key>defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false</key>
+        <true/>
+        <key>defaults delete com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers</key>
+        <true/>
+        <key>defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers</key>
+        <array>
+            <dict>
+                <key>LSHandlerURLScheme</key>
+                <string>http</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.google.chrome</string>
+            </dict>
+            <dict>
+                <key>LSHandlerURLScheme</key>
+                <string>https</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.google.chrome</string>
+            </dict>
+            <dict>
+                <key>LSHandlerContentType</key>
+                <string>public.url</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.google.chrome</string>
+            </dict>
+            <dict>
+                <key>LSHandlerURLScheme</key>
+                <string>mailto</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.microsoft.outlook</string>
+            </dict>
+            <dict>
+                <key>LSHandlerContentType</key>
+                <string>com.adobe.pdf</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.adobe.reader</string>
+            </dict>
+            <dict>
+                <key>LSHandlerURLScheme</key>
+                <string>reader2021.oauth2</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.adobe.reader</string>
+            </dict>
+            <dict>
+                <key>LSHandlerURLScheme</key>
+                <string>acrobat2018</string>
+                <key>LSHandlerRoleAll</key>
+                <string>com.adobe.reader</string>
+            </dict>
+        </array>
+        <key>defaults write com.adobe.Reader.plist "DC:WTAOnBoarding:WTAOnBoardingState:0" -int 1</key>
+        <true/>
+        <key>defaults write com.adobe.Reader.plist "DC:WTAOnBoarding:WTAOnBoardingState:1" -int 2</key>
+        <true/>
+        <key>defaults write com.adobe.Reader.plist "DC:WTAIsOnBoardingExpCompleted:1" -bool true</key>
+        <true/>
+        <key>defaults write com.adobe.Reader.plist "DC:ShowSplashScreen" -bool false</key>
+        <true/>
+        <key>defaults write com.adobe.Reader.plist "DC:EULAAccepted" -bool true</key>
+        <true/>
+        <key>defaults write com.centrastage.tray.plist "NSStatusItem Visible Item-0" -bool false</key>
+        <true/>
+        <key>defaults write com.centrastage.tray.plist "NSStatusItem Preferred Position Item-0" -float 0.0</key>
+        <true/>
+        <key>defaults write nl.root3.support "NSStatusItem Preferred Position Item-0" -float 200</key>
+        <true/>
+        <key>defaults write com.apple.Spotlight "NSStatusItem Preferred Position Item-0" -float 150</key>
+        <true/>
+        <key>defaults write com.apple.controlcenter "NSStatusItem Preferred Position BentoBox" -float 100</key>
+        <true/>
+        <key>defaults write com.apple.controlcenter "NSStatusItem Preferred Position UserSwitcher" -float 250</key>
+        <true/>
+        <key>defaults write com.apple.controlcenter "NSStatusItem Preferred Position BentoBox" -float 300</key>
+        <true/>
+        <key>defaults write com.screenconnect.client.access "NSStatusItem Visible Item-0" -bool false</key>
+        <true/>
+        <key>defaults write com.screenconnect.client.access "NSStatusItem Preferred Position Item-0" -float -1</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
