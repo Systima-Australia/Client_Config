@@ -7,15 +7,17 @@ Microsoft Word
 Microsoft Excel
 Microsoft PowerPoint
 Microsoft OneNote
-Figma
-ClickUp
+Microsoft To Do
+Canva
+Trello
 Adobe Photoshop 2024/Adobe Photoshop 2024
 Adobe Illustrator 2024/Adobe Illustrator 2024
 Adobe InDesign 2024/Adobe InDesign 2024
+Google Drive
 Microsoft Teams
 Slack
 zoom.us
-FortiClient
+1Password 7
 Spotify
 
 usersettings:
