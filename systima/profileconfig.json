@@ -83,150 +83,175 @@
     ],
     "bashCommands": [
         {
-            "command": "com.apple.finder ShowHardDrivesOnDesktop -bool true",
+            "plist": "com.apple.finder",
+            "command": "ShowHardDrivesOnDesktop -bool true",
             "description": "Show Hard Drives on Desktop"
         },
         {
-            "command": "com.apple.finder ShowExternalHardDrivesOnDesktop -bool true",
+            "plist": "com.apple.finder",
+            "command": "ShowExternalHardDrivesOnDesktop -bool true",
             "description": "Show External Hard Drives on Desktop"
         },
         {
-            "command": "com.apple.finder ShowRemovableMediaOnDesktop -bool true",
+            "plist": "com.apple.finder",
+            "command": "ShowRemovableMediaOnDesktop -bool true",
             "description": "Show Removable Media on Desktop"
         },
         {
-            "command": "com.apple.finder ShowMountedServersOnDesktop -bool true",
+            "plist": "com.apple.finder",
+            "command": "ShowMountedServersOnDesktop -bool true",
             "description": "Show Mounted Servers on Desktop"
         },
         {
-            "command": "com.apple.finder ShowStatusBar -bool true",
+            "plist": "com.apple.finder",
+            "command": "ShowStatusBar -bool true",
             "description": "Show Status Bar in Finder"
         },
         {
-            "command": "com.apple.finder FXPreferredViewStyle clmv",
+            "plist": "com.apple.finder",
+            "command": "FXPreferredViewStyle clmv",
             "description": "Set Finder view style to Column View"
         },
         {
-            "command": "NSGlobalDomain AppleInterfaceStyle Dark",
-            "description": "Set Dark Mode"
-        },
-        {
-            "command": "NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true",
+            "plist": "NSGlobalDomain",
+            "command": "NSNavPanelExpandedStateForSaveMode -bool true",
             "description": "Expand save panel by default"
         },
         {
-            "command": "com.apple.LaunchServices LSQuarantine -bool false",
+            "plist": "com.apple.LaunchServices",
+            "command": "LSQuarantine -bool false",
             "description": "Disable Quarantine"
         },
         {
-            "command": "com.apple.loginwindow TALLogoutSavesState -bool false",
+            "plist": "com.apple.loginwindow",
+            "command": "TALLogoutSavesState -bool false",
             "description": "Disable Reopen Windows at Login"
         },
         {
-            "command": "com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false",
+            "plist": "com.apple.loginwindow",
+            "command": "LoginwindowLaunchesRelaunchApps -bool false",
             "description": "Disable Relaunch Apps at Login"
         },
         {
-            "command": "com.apple.desktopservices DSDontWriteNetworkStores -bool true",
+            "plist": "com.apple.desktopservices",
+            "command": "DSDontWriteNetworkStores -bool true",
             "description": "Disable creating .DS_Store on Network Volumes"
         },
         {
-            "command": "com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true",
+            "plist": "com.apple.TimeMachine",
+            "command": "DoNotOfferNewDisksForBackup -bool true",
             "description": "Disable Time Machine prompt for new disks"
         },
         {
-            "command": "NSGlobalDomain PMPrintingExpandedStateForPrint -bool true",
+            "plist": "NSGlobalDomain",
+            "command": "PMPrintingExpandedStateForPrint -bool true",
             "description": "Expand print panel by default"
         },
         {
-            "command": "com.apple.WindowManager EnableStandardClickToShowDesktop -bool false",
+            "plist": "com.apple.WindowManager",
+            "command": "EnableStandardClickToShowDesktop -bool false",
             "description": "Disable Show Desktop on standard click"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=\"http\";LSHandlerRoleAll=\"com.google.chrome\";}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=http;LSHandlerRoleAll=com.google.chrome;}'",
             "description": "Set Chrome as default browser for http"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=\"https\";LSHandlerRoleAll=\"com.google.chrome\";}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=https;LSHandlerRoleAll=com.google.chrome;}'",
             "description": "Set Chrome as default browser for https"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.url;LSHandlerRoleAll=com.google.chrome;}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerContentType=public.url;LSHandlerRoleAll=com.google.chrome;}'",
             "description": "Set Chrome as default browser for public.url"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=\"mailto\";LSHandlerRoleAll=\"com.microsoft.outlook\";}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=mailto;LSHandlerRoleAll=com.microsoft.outlook;}'",
             "description": "Set Outlook as default mail client for mailto"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=com.adobe.pdf;LSHandlerRoleAll=com.adobe.reader;}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerContentType=com.adobe.pdf;LSHandlerRoleAll=com.adobe.reader;}'",
             "description": "Set Adobe Reader as default PDF viewer"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=reader2021.oauth2;LSHandlerRoleAll=com.adobe.reader;}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=reader2021.oauth2;LSHandlerRoleAll=com.adobe.reader;}'",
             "description": "Set Adobe Reader as default PDF viewer"
         },
         {
-            "command": "com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=acrobat2018;LSHandlerRoleAll=com.adobe.reader;}'",
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=acrobat2018;LSHandlerRoleAll=com.adobe.reader;}'",
             "description": "Set Adobe Reader as default PDF viewer"
         },
         {
-            "command": "com.adobe.Reader.plist \"DC:WTAOnBoarding:WTAOnBoardingState:1\" -int 2",
+            "plist": "com.adobe.Reader.plist",
+            "command": "DC:WTAOnBoarding:WTAOnBoardingState:1 -int 2",
             "description": "Set Adobe Reader as Onboard Complete"
         },
         {
-            "command": "com.adobe.Reader.plist \"DC:WTAIsOnBoardingExpCompleted:1\" -bool 1",
+            "plist": "com.adobe.Reader.plist",
+            "command": "DC:WTAIsOnBoardingExpCompleted:1 -bool true",
             "description": "Set Adobe Reader as Onboard Exp Completed"
         },
         {
-            "command": "com.adobe.Reader.plist \"DC:ShowSplashScreen\" -bool 0",
+            "plist": "com.adobe.Reader.plist",
+            "command": "DC:ShowSplashScreen -bool false",
             "description": "Disable Adobe Reader Splash Screen"
         },
         {
-            "command": "com.adobe.Reader.plist \"DC:EULAAccepted\" -bool 1",
+            "plist": "com.adobe.Reader.plist",
+            "command": "DC:EULAAccepted -bool true",
             "description": "Accept Adobe Reader EULA"
         },
         {
-            "command": "com.centrastage.tray.plist \"NSStatusItem Visible Item-0\" -bool false",
+            "plist": "com.centrastage.tray.plist",
+            "command": "NSStatusItem Visible Item-0 -bool false",
             "description": "Hide DattoRMM menu bar icon"
         },
         {
-            "command": "com.centrastage.tray.plist \"NSStatusItem Preferred Position Item-0\" -float 0.0",
+            "plist": "com.centrastage.tray.plist",
+            "command": "NSStatusItem Preferred Position Item-0 -float 0.0",
             "description": "Hide DattoRMM menu bar icon"
         },
         {
-            "command": "nl.root3.support \"NSStatusItem Preferred Position Item-0\" -float 200",
+            "plist": "nl.root3.support",
+            "command": "NSStatusItem Preferred Position Item-0 -float 200",
             "description": "Set SupportApp icon position"
         },
         {
-            "command": "com.apple.Spotlight \"NSStatusItem Preferred Position Item-0\" -float 150",
+            "plist": "com.apple.Spotlight",
+            "command": "NSStatusItem Preferred Position Item-0 -float 150",
             "description": "Set Spotlight icon position"
         },
         {
-            "command": "com.apple.controlcenter \"NSStatusItem Preferred Position BentoBox\" -float 100",
+            "plist": "com.apple.controlcenter",
+            "command": "NSStatusItem Preferred Position BentoBox -float 100",
             "description": "Set BentoBox icon position"
         },
         {
-            "command": "com.apple.controlcenter \"NSStatusItem Preferred Position UserSwitcher\" -float 250",
+            "plist": "com.apple.controlcenter",
+            "command": "NSStatusItem Preferred Position UserSwitcher -float 250",
             "description": "Set UserSwitcher icon position"
         },
         {
-            "command": "com.screenconnect.client.access \"NSStatusItem Visible Item-0\" -bool false",
+            "plist": "com.screenconnect.client.access",
+            "command": "NSStatusItem Visible Item-0 -bool false",
             "description": "Set ScreenConnect icon visibility"
         },
         {
-            "command": "com.screenconnect.client.access \"NSStatusItem Preferred Position Item-0\" -float -1",
+            "plist": "com.screenconnect.client.access",
+            "command": "NSStatusItem Preferred Position Item-0 -float -1",
             "description": "Set ScreenConnect icon visibility"
         }
     ],
     "osascriptCommands": [
         {
-            "command": "tell app \"System Events\" to tell appearance preferences to set dark mode to true",
+            "plist": "tell app \"System Events\" to tell appearance preferences to set dark mode to true",
             "description": "Set Dark Mode"
-        },
-        {
-            "command": "tell application \"System Events\" to set picture of every desktop to \"/Users/Shared/wallpaper.png\"",
-            "description": "Set Wallpaper"
         }
     ]
 }
