@@ -81,7 +81,7 @@
             "addToDock": true
         }
     ],
-    "plistCommands": [
+    "bashCommands": [
         {
             "command": "com.apple.finder ShowHardDrivesOnDesktop -bool true",
             "description": "Show Hard Drives on Desktop"
@@ -220,7 +220,13 @@
         }
     ],
     "osascriptCommands": [
-        "tell app \"System Events\" to tell appearance preferences to set dark mode to true",
-        "tell application \"System Events\" to set picture of every desktop to \"/Users/Shared/wallpaper.png\""
+        {
+            "command": "tell app \"System Events\" to tell appearance preferences to set dark mode to true",
+            "description": "Set Dark Mode"
+        },
+        {
+            "command": "tell application \"System Events\" to set picture of every desktop to \"/Users/Shared/wallpaper.png\"",
+            "description": "Set Wallpaper"
+        }
     ]
 }
