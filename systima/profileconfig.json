@@ -1,14 +1,21 @@
 {
     "dockApps": [
-        "Google Chrome",
-        "iMazing Profile Editor",
-        "iTerm",
-        "Visual Studio Code",
-        "Microsoft Teams",
-        "Slack",
-        "zoom.us",
-        "FortiClient",
-        "Spotify"
+        "googlechromepkg,Google Chrome,true"
+        "iterm2,iTerm,true"
+        "microsoftvisualstudiocode,Visual Studio Code,true"
+        "imazingprofileeditor,iMazing Profile Editor,true"
+        "jamfpppcutility,PPPC Utility,true"
+        "icons,Icons,true"
+        "googledrive,Google Drive,true"
+        "microsoftonedrive,OneDrive,true"
+        "githubdesktop,GitHub Desktop,true"
+        "microsoftcompanyportal,Company Portal,false"
+        "supportapp,Support,false"
+        "suspiciouspackage,Suspicious Package,true"
+        "cakebrew,Cakebrew,true"
+        "microsoftteamsnew,Microsoft Teams,true"
+        "ringcentralphone,RingCentral Phone,true"
+        "spotify,Spotify,true"
     ],
     "plistCommands": [
         "com.apple.finder ShowHardDrivesOnDesktop -bool true",
