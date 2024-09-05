@@ -81,7 +81,7 @@
             "addToDock": true
         }
     ],
-    "bashCommands": [
+    "systemSettings": [
         {
             "plist": "com.apple.finder",
             "command": "ShowHardDrivesOnDesktop -bool true",
@@ -151,7 +151,9 @@
             "plist": "com.apple.WindowManager",
             "command": "EnableStandardClickToShowDesktop -bool false",
             "description": "Disable Show Desktop on standard click"
-        },
+        }
+    ],
+        "defaultsCommands": [
         {
             "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
             "command": "LSHandlers -array-add '{LSHandlerURLScheme=http;LSHandlerRoleAll=com.google.chrome;}'",
