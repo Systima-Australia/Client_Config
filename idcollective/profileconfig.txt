@@ -12,7 +12,6 @@ Adobe Illustrator 2023/Adobe Illustrator 2023
 Adobe InDesign 2023/Adobe InDesign 2023
 Slack
 zoom.us
-FortiClient
 Self-Service
 
 usersettings:
