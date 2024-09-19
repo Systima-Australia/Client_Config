@@ -8249,8 +8249,8 @@ topazgigapixelai)
     # credit: @tully_jagoe
     name="Topaz Gigapixel AI"
     type="pkg"
-    downloadURL="https://downloads.topazlabs.com/deploy/TopazGigapixelAI/${appNewVersion}/TopazGigapixelAI-${appNewVersion}.pkg"
     appNewVersion=$(curl -sSL "https://formulae.brew.sh/api/cask/topaz-gigapixel-ai.json" | awk -F'"version":' '{split($2, a, "\""); print a[2]}' | grep -oE '[0-9.]+')
+    downloadURL=$(echo "https://downloads.topazlabs.com/deploy/TopazGigapixelAI/${appNewVersion}/TopazGigapixelAI-${appNewVersion}.pkg" <<< $appNewVersion)
     expectedTeamID="3G3JE37ZHF"
     ;;
 torbrowser)
