@@ -8248,6 +8248,7 @@ topazgigapixel|\
 topazgigapixelai)
     # credit: @tully_jagoe
     name="Topaz Gigapixel AI"
+    appName="Topaz Gigapixel AI.app"
     type="pkg"
     appNewVersion=$(curl -sSL "https://formulae.brew.sh/api/cask/topaz-gigapixel-ai.json" | awk -F'"version":' '{split($2, a, "\""); print a[2]}' | grep -oE '[0-9.]+')
     versionKey="CFBundleShortVersionString"
