@@ -1,0 +1,268 @@
+{
+    "dockApps": [
+        {
+            "itemLabel": "googlechromepkg",
+            "appName": "Google Chrome",
+            "bundleID": "com.google.Chrome",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsoftoutlook",
+            "appName": "Microsoft Outlook",
+            "bundleID": "com.microsoft.Outlook",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsoftword",
+            "appName": "Microsoft Word",
+            "bundleID": "com.microsoft.Word",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsoftexcel",
+            "appName": "Microsoft Excel",
+            "bundleID": "com.microsoft.Excel",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsoftpowerpoint",
+            "appName": "Microsoft PowerPoint",
+            "bundleID": "com.microsoft.Powerpoint",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsoftonenote",
+            "appName": "Microsoft OneNote",
+            "bundleID": "com.microsoft.onenote.mac",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsofttodo",
+            "appName": "Microsoft To Do",
+            "bundleID": "com.microsoft.to-do-mac",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "canva",
+            "appName": "Canva",
+            "bundleID": "com.canva.editor",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "trello",
+            "appName": "Trello",
+            "bundleID": "com.atlassian.trello",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "adobephotoshop2024",
+            "appName": "Adobe Photoshop 2024",
+            "bundleID": "com.adobe.Photoshop2024",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "adobeillustrator2024",
+            "appName": "Adobe Illustrator 2024",
+            "bundleID": "com.adobe.Illustrator2024",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "adobeindesign2024",
+            "appName": "Adobe InDesign 2024",
+            "bundleID": "com.adobe.InDesign2024",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "googledrive",
+            "appName": "Google Drive",
+            "bundleID": "com.google.GoogleDrive",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "microsoftteams",
+            "appName": "Microsoft Teams",
+            "bundleID": "com.microsoft.teams",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "slack",
+            "appName": "Slack",
+            "bundleID": "com.tinyspeck.slackmacgap",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "zoomus",
+            "appName": "zoom.us",
+            "bundleID": "us.zoom.xos",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "1password7",
+            "appName": "1Password 7",
+            "bundleID": "com.agilebits.onepassword7",
+            "soeRequired": true,
+            "addToDock": true
+        },
+        {
+            "itemLabel": "spotify",
+            "appName": "Spotify",
+            "bundleID": "com.spotify.client",
+            "soeRequired": true,
+            "addToDock": true
+        }
+    ],
+    "systemSettings": [
+        {
+            "plist": "com.apple.finder",
+            "command": "ShowHardDrivesOnDesktop -bool true",
+            "description": "Show Hard Drives on Desktop"
+        },
+        {
+            "plist": "com.apple.finder",
+            "command": "ShowExternalHardDrivesOnDesktop -bool true",
+            "description": "Show External Hard Drives on Desktop"
+        },
+        {
+            "plist": "com.apple.finder",
+            "command": "ShowRemovableMediaOnDesktop -bool true",
+            "description": "Show Removable Media on Desktop"
+        },
+        {
+            "plist": "com.apple.finder",
+            "command": "ShowMountedServersOnDesktop -bool true",
+            "description": "Show Mounted Servers on Desktop"
+        },
+        {
+            "plist": "com.apple.finder",
+            "command": "ShowStatusBar -bool true",
+            "description": "Show Status Bar in Finder"
+        },
+        {
+            "plist": "com.apple.finder",
+            "command": "FXPreferredViewStyle clmv",
+            "description": "Set Finder View Style to Column"
+        },
+        {
+            "plist": "com.apple.dock",
+            "command": "autohide -bool true",
+            "description": "Enable Dock Auto-Hide"
+        },
+        {
+            "plist": "NSGlobalDomain",
+            "command": "AppleInterfaceStyle Dark",
+            "description": "Enable Dark Mode"
+        },
+        {
+            "plist": "NSGlobalDomain",
+            "command": "NSNavPanelExpandedStateForSaveMode -bool true",
+            "description": "Expand Save Panel by Default"
+        },
+        {
+            "plist": "com.apple.LaunchServices",
+            "command": "LSQuarantine -bool false",
+            "description": "Disable Quarantine for Downloaded Apps"
+        },
+        {
+            "plist": "com.apple.loginwindow",
+            "command": "TALLogoutSavesState -bool false",
+            "description": "Disable Logout Saves State"
+        },
+        {
+            "plist": "com.apple.loginwindow",
+            "command": "LoginwindowLaunchesRelaunchApps -bool false",
+            "description": "Disable Relaunch Apps on Login"
+        },
+        {
+            "plist": "com.apple.finder",
+            "command": "ShowStatusBar -bool true",
+            "description": "Show Status Bar in Finder"
+        },
+        {
+            "plist": "com.apple.desktopservices",
+            "command": "DSDontWriteNetworkStores -bool true",
+            "description": "Disable .DS_Store File Creation on Network Volumes"
+        },
+        {
+            "plist": "com.apple.TimeMachine",
+            "command": "DoNotOfferNewDisksForBackup -bool true",
+            "description": "Prevent Time Machine from Prompting to Use New Disks for Backup"
+        },
+        {
+            "plist": "NSGlobalDomain",
+            "command": "PMPrintingExpandedStateForPrint -bool true",
+            "description": "Expand Print Panel by Default"
+        },
+        {
+            "plist": "com.apple.WindowManager",
+            "command": "EnableStandardClickToShowDesktop -bool false",
+            "description": "Disable Click to Show Desktop"
+        },
+        {
+            "plist": "-g",
+            "command": "AppleAccentColor -int 1",
+            "description": "Set Accent Color to Orange"
+        },
+        {
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=\"http\";LSHandlerRoleAll=\"com.google.chrome\";LSHandlerPreferredVersions={LSHandlerRoleAll=\"-\";};}'",
+            "description": "Set Google Chrome as Default Handler for HTTP"
+        },
+        {
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=\"https\";LSHandlerRoleAll=\"com.google.chrome\";LSHandlerPreferredVersions={LSHandlerRoleAll=\"-\";};}'",
+            "description": "Set Google Chrome as Default Handler for HTTPS"
+        },
+        {
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure",
+            "command": "LSHandlers -array-add '{LSHandlerContentType=public.url;LSHandlerRoleAll=com.google.chrome;LSHandlerPreferredVersions={LSHandlerRoleAll=\"-\";};}'",
+            "description": "Set Google Chrome as Default Handler for URLs"
+        },
+        {
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=\"mailto\";LSHandlerRoleAll=\"com.microsoft.outlook\";LSHandlerPreferredVersions={LSHandlerRoleAll=\"-\";};}'",
+            "description": "Set Microsoft Outlook as Default Handler for Mailto"
+        },
+        {
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=\"callto\";LSHandlerRoleAll=\"com.ringcentral.glip\";LSHandlerPreferredVersions={LSHandlerRoleAll=\"-\";};}'",
+            "description": "Set RingCentral Glip as Default Handler for Callto"
+        },
+        {
+            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure",
+            "command": "LSHandlers -array-add '{LSHandlerURLScheme=\"tel\";LSHandlerRoleAll=\"com.ringcentral.ringcentralformac\";LSHandlerPreferredVersions={LSHandlerRoleAll=\"-\";};}'",
+            "description": "Set RingCentral for Mac as Default Handler for Tel"
+        },
+        {
+            "plist": "com.centrastage.tray.plist",
+            "command": "NSStatusItem Visible Item-0 -bool false",
+            "description": "Hide DattoRMM Menu Bar Icon"
+        },
+        {
+            "plist": "com.centrastage.tray.plist",
+            "command": "NSStatusItem Preferred Position Item-0 -float 0.0",
+            "description": "Set DattoRMM Menu Bar Icon Position"
+        }
+    ],
+    "osascriptCommands": [
+        {
+            "command": "tell app \"System Events\" to tell appearance preferences to set dark mode to true",
+            "description": "Enable Dark Mode"
+        }
+    ]
+}
