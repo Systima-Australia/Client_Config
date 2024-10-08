@@ -1,83 +1,115 @@
 {
     "dockApps": [
         {
-            "name": "googlechromepkg",
-            "displayName": "Google Chrome",
+            "itemLabel": "googlechromepkg",
+            "appName": "Google Chrome",
+            "bundleID": "com.google.Chrome",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "iterm2",
-            "displayName": "iTerm",
+            "itemLabel": "iterm2",
+            "appName": "iTerm",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "microsoftvisualstudiocode",
-            "displayName": "Visual Studio Code",
+            "itemLabel": "microsoftvisualstudiocode",
+            "appName": "Visual Studio Code",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "imazingprofileeditor",
-            "displayName": "iMazing Profile Editor",
+            "itemLabel": "imazingprofileeditor",
+            "appName": "iMazing Profile Editor",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "jamfpppcutility",
-            "displayName": "PPPC Utility",
+            "itemLabel": "jamfpppcutility",
+            "appName": "PPPC Utility",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "icons",
-            "displayName": "Icons",
+            "itemLabel": "icons",
+            "appName": "Icons",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "googledrive",
-            "displayName": "Google Drive",
+            "itemLabel": "googledrive",
+            "appName": "Google Drive",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "microsoftonedrive",
-            "displayName": "OneDrive",
+            "itemLabel": "microsoftonedrive",
+            "appName": "OneDrive",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "githubdesktop",
-            "displayName": "GitHub Desktop",
+            "itemLabel": "githubdesktop",
+            "appName": "GitHub Desktop",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "microsoftcompanyportal",
-            "displayName": "Company Portal",
+            "itemLabel": "microsoftcompanyportal",
+            "appName": "Company Portal",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": false
         },
         {
-            "name": "supportapp",
-            "displayName": "Support",
+            "itemLabel": "supportapp",
+            "appName": "Support",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": false
         },
         {
-            "name": "suspiciouspackage",
-            "displayName": "Suspicious Package",
+            "itemLabel": "suspiciouspackage",
+            "appName": "Suspicious Package",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "cakebrew",
-            "displayName": "Cakebrew",
+            "itemLabel": "cakebrew",
+            "appName": "Cakebrew",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "microsoftteamsnew",
-            "displayName": "Microsoft Teams",
+            "itemLabel": "microsoftteamsnew",
+            "appName": "Microsoft Teams",
+            "bundleID": "com.microsoft.teams2",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "ringcentralphone",
-            "displayName": "RingCentral Phone",
+            "itemLabel": "ringcentralphone",
+            "appName": "RingCentral Phone",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         },
         {
-            "name": "spotify",
-            "displayName": "Spotify",
+            "itemLabel": "spotify",
+            "appName": "Spotify",
+            "bundleID": "",
+            "soeRequired": true,
             "addToDock": true
         }
     ],
@@ -177,16 +209,6 @@
         {
             "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
             "command": "LSHandlers -array-add '{LSHandlerContentType=com.adobe.pdf;LSHandlerRoleAll=com.adobe.reader;}'",
-            "description": "Set Adobe Reader as default PDF viewer"
-        },
-        {
-            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
-            "command": "LSHandlers -array-add '{LSHandlerURLScheme=reader2021.oauth2;LSHandlerRoleAll=com.adobe.reader;}'",
-            "description": "Set Adobe Reader as default PDF viewer"
-        },
-        {
-            "plist": "com.apple.LaunchServices/com.apple.launchservices.secure.plist",
-            "command": "LSHandlers -array-add '{LSHandlerURLScheme=acrobat2018;LSHandlerRoleAll=com.adobe.reader;}'",
             "description": "Set Adobe Reader as default PDF viewer"
         },
         {
