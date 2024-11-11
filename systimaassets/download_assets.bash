@@ -67,5 +67,3 @@ downloadAssets() {
     sudo chmod -R 755 "${localDir}"
     echo -e "    ----${gitRepo} END\n"
 }
-
-downloadAssets macosicons
