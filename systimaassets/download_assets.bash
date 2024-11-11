@@ -1,13 +1,14 @@
 #!/bin/bash
+echo -e "\n    ----download_assets START"
 
 # MARK: ----------------- Install XCode CLT -----------------
 
 # Install Xcode Command Line Tools if not installed
 xcodePath="/Library/Developer/CommandLineTools"
-xcodeVersion="$(softwareupdate -l | grep -B 1 "Command Line Tools" | awk -F"*" '/^ *\*/ {print $2}' | sed -e 's/^ *Label: //' -e 's/^ *//' | sort -V | tail -n1)"
 
 # Command to install Xcode CLT
 echo "Checking Xcode CLT..."
+xcodeVersion="$(softwareupdate -l | grep -B 1 "Command Line Tools" | awk -F"*" '/^ *\*/ {print $2}' | sed -e 's/^ *Label: //' -e 's/^ *//' | sort -V | tail -n1)"
 [[ "${xcodeVersion}" == *"No new software available."* ]] && {
     echo "Installing Xcode Command Line Tools version: ${xcodeVersion}"
     touch "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
@@ -29,7 +30,7 @@ downloadAssets() {
     localDir="/Library/Application Support/Systima/${gitRepo}"
 
     # Download or update assets
-    echo -e "\n    ----${gitRepo} START"
+    echo -e "\n    downloading ${gitRepo}"
     # Check if Git repo files exist
     [[ ! -d "${localDir}/.git" ]] && {
         [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder" && mkdir -p "${localDir}" # If the folder does not exist, make it
@@ -43,5 +44,5 @@ downloadAssets() {
     # Set permissions for the local directory
     sudo chown -R root:wheel "${localDir}"
     sudo chmod -R 755 "${localDir}"
-    echo -e "    ----${gitRepo} END\n"
 }
+echo -e "\n    ----download_assets END"
