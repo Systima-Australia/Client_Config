@@ -44,5 +44,6 @@ downloadAssets() {
     # Set permissions for the local directory
     sudo chown -R root:wheel "${localDir}"
     sudo chmod -R 755 "${localDir}"
+
+    echo -e "\n    ----download_assets END"
 }
-echo -e "\n    ----download_assets END"
