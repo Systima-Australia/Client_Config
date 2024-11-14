@@ -28,11 +28,10 @@ installXcodeCLT() {
             sleep 10
             updateCheck=$(pgrep -x "softwareupdate")
         done
-        echo "Xcode Command Line Tools installation complete"
-
-        sudo rm -vf "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
         xcode-select -s "${xcodePath}"
+        echo "Xcode Command Line Tools installation complete"
     } || echo "Xcode Command Line Tools is up to date."
+    sudo rm -vf "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
 
     # Set Xcode CLT path if not set, or incorrectly set to App path
     [[ $(xcode-select -p) != "${xcodePath}" ]] && {
