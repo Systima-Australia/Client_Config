@@ -5,14 +5,20 @@ xcodeCLT() {
     # MARK: ----------------- Install XCode CLT -----------------
     # Install Xcode Command Line Tools if not installed
     xcodePath="/Library/Developer/CommandLineTools"
-    currentCLTVersion="Command Line Tools for Xcode-$(pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep "version" | awk '{print $2}' | cut -d '.' -f 1,2)"
-    echo -e "Current Xcode Command Line Tools version:\n${currentCLTVersion}"
+    echo "Checking Xcode CLT install status and version..."
+    pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1 && {
+        xcodeInstalledVersion=$(pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep "version" | awk '{print $2}' | cut -d '.' -f 1,2 | sort -V | tail -n1)
+        xcodeInstalledVersion="Command Line Tools for Xcode-${xcodeInstalledVersion}"
+        echo -e "Current Xcode CLT version:\n${xcodeInstalledVersion}"
+    } || {
+        xcodeInstalledVersion="Not Installed"
+        echo "Xcode Command Line Tools not installed."
+    }
 
     # Command to install Xcode CLT
-    echo "Checking Xcode CLT..."
     touch "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
     xcodeVersion="$(softwareupdate -l | grep -B 1 "Command Line Tools" | awk -F"*" '/^ *\*/ {print $2}' | sed -e 's/^ *Label: //' -e 's/^ *//' | sort -V | tail -n1)"
-    [[ "${xcodeVersion}" != *"${currentCLTVersion}"* ]] && {
+    [[ "${xcodeVersion}" != *"${xcodeInstalledVersion}"* ]] && {
         echo -e "Installing Xcode Command Line Tools version:\n${xcodeVersion}"
         sudo softwareupdate -i --verbose "${xcodeVersion}"
 
