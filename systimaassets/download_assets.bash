@@ -9,10 +9,8 @@ xcodeCLT() {
     echo "Checking Xcode CLT..."
     touch "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
     xcodeVersion="$(softwareupdate -l | grep -B 1 "Command Line Tools" | awk -F"*" '/^ *\*/ {print $2}' | sed -e 's/^ *Label: //' -e 's/^ *//' | sort -V | tail -n1)"
-    sudo mv "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress" "/tmp/.${xcodeVersion}"
     [[ "${xcodeVersion}" != *"No new software available."* ]] && {
         echo -e "Installing Xcode Command Line Tools version:\n${xcodeVersion}"
-        #touch "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
         sudo softwareupdate -i --verbose "${xcodeVersion}"
 
         echo "Waiting for Xcode Command Line Tools installation to complete..."
@@ -34,7 +32,7 @@ xcodeCLT() {
     }
 }
 
-[[ $(! command -v git &> /dev/null) ]] && {
+[[ $(git > /dev/null 2>&1) ]] || {
     echo "Git not detected, checking xcode CLT..."
     xcodeCLT
 }
