@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\n    ----download_assets START"
 
-xcodeCLT() {
+installXcodeCLT() {
     # MARK: ----------------- Install XCode CLT -----------------
     # Install Xcode Command Line Tools if not installed
     xcodePath="/Library/Developer/CommandLineTools"
@@ -43,7 +43,7 @@ xcodeCLT() {
 
 [[ $(git > /dev/null 2>&1) ]] || {
     echo "Git not detected, checking xcode CLT..."
-    xcodeCLT
+    installXcodeCLT
 }
 
 # ----------------- Download or update Systima assets from GitHub -----------------
