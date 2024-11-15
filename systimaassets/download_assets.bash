@@ -6,7 +6,7 @@ installXcodeCLT() {
     # Install Xcode Command Line Tools if not installed
     xcodePath="/Library/Developer/CommandLineTools"
     echo "Checking Xcode CLT install status and version..."
-    pkgutil --pkg-info=com.apple.pkg.CLTools_Executables > /dev/null 2>&1 && {
+    xcode-select -p && {
         xcodeInstalledVersion=$(pkgutil --pkg-info=com.apple.pkg.CLTools_Executables | grep "version" | awk '{print $2}' | cut -d '.' -f 1,2 | sort -V | tail -n1)
         xcodeInstalledVersion="Command Line Tools for Xcode-${xcodeInstalledVersion}"
         echo -e "Current Xcode CLT version:\n${xcodeInstalledVersion}"
