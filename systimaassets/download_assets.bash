@@ -16,7 +16,7 @@ installXcodeCLT() {
     }
 
     # Command to install Xcode CLT
-    touch "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
+    sudo touch "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
     xcodeVersion="$(softwareupdate -l | grep -B 1 "Command Line Tools" | awk -F"*" '/^ *\*/ {print $2}' | sed -e 's/^ *Label: //' -e 's/^ *//' | sort -V | tail -n1)"
     [[ "${xcodeVersion}" != *"${xcodeInstalledVersion}"* ]] && {
         echo -e "Installing Xcode Command Line Tools version:\n${xcodeVersion}"
@@ -40,7 +40,7 @@ installXcodeCLT() {
     }
 }
 
-[[ $(git > /dev/null 2>&1) ]] || {
+git -v > /dev/null 2>&1 || {
     echo "Git not detected, checking xcode CLT..."
     installXcodeCLT
 }
