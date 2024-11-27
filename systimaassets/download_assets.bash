@@ -14,12 +14,12 @@ installXcodeCLT() {
         echo -e "Latest Xcode CLT version:\n    ${xcodeVersion}"
     } || {
         xcodeInstalledVersion="Not Installed"
-        echo "Xcode Command Line Tools not installed."
+        echo "  --❌ Xcode Command Line Tools not installed."
     }
 
     # Command to install Xcode CLT
     [[ "${xcodeVersion}" != *"${xcodeInstalledVersion}"* ]] && {
-        echo -e "Installing Xcode Command Line Tools version:\n${xcodeVersion}"
+        echo -e "  --⚠️ Installing Xcode Command Line Tools version:\n${xcodeVersion}"
         sudo softwareupdate -i --verbose "${xcodeVersion}"
 
         echo "Waiting for Xcode Command Line Tools installation to complete..."
@@ -29,13 +29,13 @@ installXcodeCLT() {
             updateCheck=$(pgrep -x "softwareupdate")
         done
         xcode-select -s "${xcodePath}"
-        echo "Xcode Command Line Tools installation complete"
-    } || echo "Xcode Command Line Tools is up to date."
+        echo "  --✅ Xcode Command Line Tools installation complete"
+    } || echo "  --✅ Xcode Command Line Tools is up to date."
     sudo rm -vf "/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
 
     # Set Xcode CLT path if not set, or incorrectly set to App path
     [[ $(xcode-select -p) != "${xcodePath}" ]] && {
-        echo "Setting XCode CLT path to ${xcodePath}"
+        echo "  --ℹ️ Setting XCode CLT path to ${xcodePath}"
         xcode-select -s "${xcodePath}"
     }
 }
@@ -56,10 +56,10 @@ downloadAssets() {
     # Check if Git repo files exist
     [[ ! -d "${localDir}/.git" ]] && {
         [[ ! -d "${localDir}" ]] && echo "Creating ${gitRepo} folder" ; mkdir -p "${localDir}" # If the folder does not exist, make it
-        echo "    Cloning ${gitRepo} to ${localDir}"
+        echo "  --❌ Cloning ${gitRepo} to ${localDir}"
         git clone "https://github.com/Systima-Australia/${gitRepo}" "${localDir}"
     } || {
-        echo "    Checking ${gitRepo} for updates"
+        echo "  --✅ Checking ${gitRepo} for updates"
         cd "${localDir}" || return
         sudo git pull
     }
