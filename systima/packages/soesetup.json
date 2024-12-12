@@ -1,0 +1,39 @@
+{
+    "soeSoftware": [
+        {
+            "itemLabel": "googlechrome",
+            "appName": "Google Chrome",
+            "appPath": "/Applications/Google Chrome.app"
+        },
+        {
+            "itemLabel": "iterm2",
+            "appName": "iTerm2",
+            "appPath": "/Applications/iTerm.app"
+        },
+        {
+            "itemLabel": "visualstudiocode",
+            "appName": "Visual Studio Code",
+            "appPath": "/Applications/Visual Studio Code.app"
+        },
+        {
+            "itemLabel": "adobereaderdc",
+            "appName": "Adobe Acrobat Reader DC",
+            "appPath": "/Applications/Adobe Acrobat Reader DC.app"
+        },
+        {
+            "itemLabel": "figma",
+            "appName": "Figma",
+            "appPath": "/Applications/Figma.app"
+        },
+        {
+            "itemLabel": "zoom",
+            "appName": "Zoom",
+            "appPath": "/Applications/zoom.us.app"
+        },
+        {
+            "itemLabel": "spotify",
+            "appName": "Spotify",
+            "appPath": "/Applications/Spotify.app"
+        }
+    ]
+}
