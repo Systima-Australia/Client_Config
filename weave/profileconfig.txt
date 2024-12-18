@@ -43,11 +43,9 @@ com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '
 com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=com.adobe.pdf;LSHandlerRoleAll=com.adobe.reader;}'
 com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=reader2021.oauth2;LSHandlerRoleAll=com.adobe.reader;}'
 com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=acrobat2018;LSHandlerRoleAll=com.adobe.reader;}'
-com.adobe.Reader.plist "DC:WTAOnBoarding:WTAOnBoardingState:0" -int 1
-com.adobe.Reader.plist "DC:WTAOnBoarding:WTAOnBoardingState:1" -int 2
-com.adobe.Reader.plist "DC:WTAIsOnBoardingExpCompleted:1" -bool 1
-com.adobe.Reader.plist "DC:ShowSplashScreen" -bool 0
-com.adobe.Reader.plist "DC:EULAAccepted" -bool 1
+com.adobe.Reader.plist DC -dict-add "WTAIsOnBoardingExpCompleted" -bool true
+com.adobe.Reader.plist DC -dict-add "ShowSplashScreen" -bool false
+com.adobe.Reader.plist DC -dict-add "EULAAccepted" -bool true
 com.centrastage.tray.plist "NSStatusItem Visible Item-0" -bool false
 com.centrastage.tray.plist "NSStatusItem Preferred Position Item-0" -float 0.0
 com.screenconnect.client.access "NSStatusItem Visible Item-0" -bool false
