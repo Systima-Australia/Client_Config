@@ -1,26 +1,25 @@
-#!/bin/bash
-#DockVersion:241218
-#
-#apps:
-#Google Chrome
-#zoom.us
-#Slack
-#Airtame
-#Microsoft Outlook
-#Microsoft Word
-#Microsoft Excel
-#Microsoft PowerPoint
-#Microsoft OneNote
-#Figma
-#ClickUp
-#Photoshop
-#Illustrator
-#InDesign
-#Microsoft Teams
-#FortiClient
-#Spotify
-#
-#usersettings:
+DockVersion:241218
+
+apps:
+Google Chrome
+zoom.us
+Slack
+Airtame
+Microsoft Outlook
+Microsoft Word
+Microsoft Excel
+Microsoft PowerPoint
+Microsoft OneNote
+Figma
+ClickUp
+Photoshop
+Illustrator
+InDesign
+Microsoft Teams
+FortiClient
+Spotify
+
+usersettings:
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
