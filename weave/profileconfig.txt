@@ -43,11 +43,11 @@ defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandle
 defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=com.adobe.pdf;LSHandlerRoleAll=com.adobe.reader;}'
 defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=reader2021.oauth2;LSHandlerRoleAll=com.adobe.reader;}'
 defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=acrobat2018;LSHandlerRoleAll=com.adobe.reader;}'
-/usr/libexec/PlistBuddy -c "Set :DC:WTAOnBoarding:WTAOnBoardingState:0 1" ~/Library/Preferences/com.adobe.Reader.plist
-/usr/libexec/PlistBuddy -c "Set :DC:WTAOnBoarding:WTAOnBoardingState:1 2" ~/Library/Preferences/com.adobe.Reader.plist
-/usr/libexec/PlistBuddy -c "Set :DC:WTAIsOnBoardingExpCompleted:1 true" ~/Library/Preferences/com.adobe.Reader.plist
-/usr/libexec/PlistBuddy -c "Set :DC:ShowSplashScreen false" ~/Library/Preferences/com.adobe.Reader.plist
-/usr/libexec/PlistBuddy -c "Set :DC:EULAAccepted true" ~/Library/Preferences/com.adobe.Reader.plist
+/usr/libexec/PlistBuddy -c "Set :DC:WTAOnBoarding:WTAOnBoardingState:0 1" "/Users/${username}/Library/Preferences/com.adobe.Reader.plist"
+/usr/libexec/PlistBuddy -c "Set :DC:WTAOnBoarding:WTAOnBoardingState:1 2" "/Users/${username}/Library/Preferences/com.adobe.Reader.plist"
+/usr/libexec/PlistBuddy -c "Set :DC:WTAIsOnBoardingExpCompleted:1 true" "/Users/${username}/Library/Preferences/com.adobe.Reader.plist"
+/usr/libexec/PlistBuddy -c "Set :DC:ShowSplashScreen false" "/Users/${username}/Library/Preferences/com.adobe.Reader.plist"
+/usr/libexec/PlistBuddy -c "Set :DC:EULAAccepted true" "/Users/${username}/Library/Preferences/com.adobe.Reader.plist"
 defaults write com.centrastage.tray.plist "NSStatusItem Visible Item-0" -bool false
 defaults write com.centrastage.tray.plist "NSStatusItem Preferred Position Item-0" -float 0.0
 defaults write com.screenconnect.client.access "NSStatusItem Visible Item-0" -bool false
