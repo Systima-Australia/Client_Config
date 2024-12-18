@@ -6,6 +6,9 @@ iMazing Profile Editor
 iTerm
 Visual Studio Code
 Microsoft Teams
+Photoshop
+Illustrator
+InDesign
 Slack
 zoom.us
 FortiClient
