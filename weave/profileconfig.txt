@@ -1,4 +1,4 @@
-DockVersion:050124
+DockVersion:241218
 
 apps:
 Google Chrome
@@ -20,7 +20,6 @@ FortiClient
 Spotify
 
 usersettings:
-defaults write -g AppleAccentColor -int 0
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
