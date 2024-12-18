@@ -20,49 +20,49 @@ FortiClient
 Spotify
 
 usersettings:
-"Set :ShowHardDrivesOnDesktop true" ~/Library/Preferences/com.apple.finder.plist
-"Set :ShowExternalHardDrivesOnDesktop true" ~/Library/Preferences/com.apple.finder.plist
-"Set :ShowRemovableMediaOnDesktop true" ~/Library/Preferences/com.apple.finder.plist
-"Set :ShowMountedServersOnDesktop true" ~/Library/Preferences/com.apple.finder.plist
-"Set :ShowStatusBar true" ~/Library/Preferences/com.apple.finder.plist
-"Set :FXPreferredViewStyle clmv" ~/Library/Preferences/com.apple.finder.plist
-"Set :AppleInterfaceStyle Dark" ~/Library/Preferences/.GlobalPreferences.plist
-"Set :NSNavPanelExpandedStateForSaveMode true" ~/Library/Preferences/.GlobalPreferences.plist
-"Set :LSQuarantine false" ~/Library/Preferences/com.apple.LaunchServices.plist
-"Set :TALLogoutSavesState false" ~/Library/Preferences/com.apple.loginwindow.plist
-"Set :LoginwindowLaunchesRelaunchApps false" ~/Library/Preferences/com.apple.loginwindow.plist
-"Set :DSDontWriteNetworkStores true" ~/Library/Preferences/com.apple.desktopservices.plist
-"Set :DoNotOfferNewDisksForBackup true" ~/Library/Preferences/com.apple.TimeMachine.plist
-"Set :PMPrintingExpandedStateForPrint true" ~/Library/Preferences/.GlobalPreferences.plist
-"Set :EnableStandardClickToShowDesktop false" ~/Library/Preferences/com.apple.WindowManager.plist
-"Add :LSHandlers array" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:0 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:0:LSHandlerURLScheme string http" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:0:LSHandlerRoleAll string com.google.chrome" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:1 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:1:LSHandlerURLScheme string https" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:1:LSHandlerRoleAll string com.google.chrome" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:2 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:2:LSHandlerContentType string public.url" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:2:LSHandlerRoleAll string com.google.chrome" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:3 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:3:LSHandlerURLScheme string mailto" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:3:LSHandlerRoleAll string com.microsoft.outlook" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:4 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:4:LSHandlerContentType string com.adobe.pdf" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:4:LSHandlerRoleAll string com.adobe.reader" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:5 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:5:LSHandlerURLScheme string reader2021.oauth2" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:5:LSHandlerRoleAll string com.adobe.reader" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:6 dict" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:6:LSHandlerURLScheme string acrobat2018" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Add :LSHandlers:6:LSHandlerRoleAll string com.adobe.reader" ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist
-"Set :NSStatusItem Visible Item-0 false" ~/Library/Preferences/com.centrastage.tray.plist
-"Set :NSStatusItem Preferred Position Item-0 0.0" ~/Library/Preferences/com.centrastage.tray.plist
-"Set :NSStatusItem Visible Item-0 false" ~/Library/Preferences/com.screenconnect.client.access.plist
-"Set :NSStatusItem Preferred Position Item-0 0.0" ~/Library/Preferences/com.screenconnect.client.access.plist
-"Set :NSStatusItem Preferred Position Item-0 200" ~/Library/Preferences/nl.root3.support.plist
-"Set :NSStatusItem Preferred Position Item-0 150" ~/Library/Preferences/com.apple.Spotlight.plist
-"Set :NSStatusItem Preferred Position BentoBox 100" ~/Library/Preferences/com.apple.controlcenter.plist
-"Set :NSStatusItem Preferred Position UserSwitcher 250" ~/Library/Preferences/com.apple.controlcenter.plist
-"Set :NSStatusItem Preferred Position BentoBox 300" ~/Library/Preferences/com.apple.controlcenter.plist
+"Set :ShowHardDrivesOnDesktop true" "/Users/${username}/Preferences/com.apple.finder.plist"
+"Set :ShowExternalHardDrivesOnDesktop true" "/Users/${username}/Preferences/com.apple.finder.plist"
+"Set :ShowRemovableMediaOnDesktop true" "/Users/${username}/Preferences/com.apple.finder.plist"
+"Set :ShowMountedServersOnDesktop true" "/Users/${username}/Preferences/com.apple.finder.plist"
+"Set :ShowStatusBar true" "/Users/${username}/Preferences/com.apple.finder.plist"
+"Set :FXPreferredViewStyle clmv" "/Users/${username}/Preferences/com.apple.finder.plist"
+"Set :AppleInterfaceStyle Dark" "/Users/${username}/Preferences/.GlobalPreferences.plist"
+"Set :NSNavPanelExpandedStateForSaveMode true" "/Users/${username}/Preferences/.GlobalPreferences.plist"
+"Set :LSQuarantine false" "/Users/${username}/Preferences/com.apple.LaunchServices.plist"
+"Set :TALLogoutSavesState false" "/Users/${username}/Preferences/com.apple.loginwindow.plist"
+"Set :LoginwindowLaunchesRelaunchApps false" "/Users/${username}/Preferences/com.apple.loginwindow.plist"
+"Set :DSDontWriteNetworkStores true" "/Users/${username}/Preferences/com.apple.desktopservices.plist"
+"Set :DoNotOfferNewDisksForBackup true" "/Users/${username}/Preferences/com.apple.TimeMachine.plist"
+"Set :PMPrintingExpandedStateForPrint true" "/Users/${username}/Preferences/.GlobalPreferences.plist"
+"Set :EnableStandardClickToShowDesktop false" "/Users/${username}/Preferences/com.apple.WindowManager.plist"
+"Add :LSHandlers array" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:0 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:0:LSHandlerURLScheme string http" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:0:LSHandlerRoleAll string com.google.chrome" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:1 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:1:LSHandlerURLScheme string https" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:1:LSHandlerRoleAll string com.google.chrome" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:2 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:2:LSHandlerContentType string public.url" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:2:LSHandlerRoleAll string com.google.chrome" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:3 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:3:LSHandlerURLScheme string mailto" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:3:LSHandlerRoleAll string com.microsoft.outlook" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:4 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:4:LSHandlerContentType string com.adobe.pdf" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:4:LSHandlerRoleAll string com.adobe.reader" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:5 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:5:LSHandlerURLScheme string reader2021.oauth2" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:5:LSHandlerRoleAll string com.adobe.reader" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:6 dict" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:6:LSHandlerURLScheme string acrobat2018" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Add :LSHandlers:6:LSHandlerRoleAll string com.adobe.reader" "/Users/${username}/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"
+"Set :NSStatusItem Visible Item-0 false" "/Users/${username}/Preferences/com.centrastage.tray.plist"
+"Set :NSStatusItem Preferred Position Item-0 0.0" "/Users/${username}/Preferences/com.centrastage.tray.plist"
+"Set :NSStatusItem Visible Item-0 false" "/Users/${username}/Preferences/com.screenconnect.client.access.plist"
+"Set :NSStatusItem Preferred Position Item-0 0.0" "/Users/${username}/Preferences/com.screenconnect.client.access.plist"
+"Set :NSStatusItem Preferred Position Item-0 200" "/Users/${username}/Preferences/nl.root3.support.plist"
+"Set :NSStatusItem Preferred Position Item-0 150" "/Users/${username}/Preferences/com.apple.Spotlight.plist"
+"Set :NSStatusItem Preferred Position BentoBox 100" "/Users/${username}/Preferences/com.apple.controlcenter.plist"
+"Set :NSStatusItem Preferred Position UserSwitcher 250" "/Users/${username}/Preferences/com.apple.controlcenter.plist"
+"Set :NSStatusItem Preferred Position BentoBox 300" "/Users/${username}/Preferences/com.apple.controlcenter.plist"
