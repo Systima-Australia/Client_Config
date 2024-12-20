@@ -1,0 +1,52 @@
+DockVersion:050124
+
+apps:
+Google Chrome
+Firefox
+Safari
+Microsoft Word
+Microsoft Excel
+Microsoft PowerPoint
+Keynote
+Google Drive
+Microsoft Teams
+Webex
+zoom.us
+Self-Service
+System
+
+usersettings:
+com.apple.finder ShowHardDrivesOnDesktop -bool true
+com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+com.apple.finder ShowRemovableMediaOnDesktop -bool true
+com.apple.finder ShowMountedServersOnDesktop -bool true
+com.apple.finder ShowStatusBar -bool true
+com.apple.finder FXPreferredViewStyle clmv
+NSGlobalDomain AppleInterfaceStyle Dark
+NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+com.apple.LaunchServices LSQuarantine -bool false
+com.apple.loginwindow TALLogoutSavesState -bool false
+com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
+com.apple.desktopservices DSDontWriteNetworkStores -bool true
+com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="http";LSHandlerRoleAll="com.google.chrome";}'
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="https";LSHandlerRoleAll="com.google.chrome";}'
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.url;LSHandlerRoleAll=com.google.chrome;}'
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme="mailto";LSHandlerRoleAll="com.microsoft.outlook";}'
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=com.adobe.pdf;LSHandlerRoleAll=com.adobe.reader;}'
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=reader2021.oauth2;LSHandlerRoleAll=com.adobe.reader;}'
+com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=acrobat2018;LSHandlerRoleAll=com.adobe.reader;}'
+com.adobe.Reader.plist DC -dict-add "WTAIsOnBoardingExpCompleted" -bool true
+com.adobe.Reader.plist DC -dict-add "ShowSplashScreen" -bool false
+com.adobe.Reader.plist DC -dict-add "EULAAccepted" -bool true
+com.centrastage.tray.plist "NSStatusItem Visible Item-0" -bool false
+com.centrastage.tray.plist "NSStatusItem Preferred Position Item-0" -float 0.0
+com.screenconnect.client.access "NSStatusItem Visible Item-0" -bool false
+com.screenconnect.client.access "NSStatusItem Preferred Position Item-0" -float 0.0
+nl.root3.support "NSStatusItem Preferred Position Item-0" -float 200
+com.apple.Spotlight "NSStatusItem Preferred Position Item-0" -float 150
+com.apple.controlcenter "NSStatusItem Preferred Position BentoBox" -float 100
+com.apple.controlcenter "NSStatusItem Preferred Position UserSwitcher" -float 250
+com.apple.controlcenter "NSStatusItem Preferred Position BentoBox" -float 300
