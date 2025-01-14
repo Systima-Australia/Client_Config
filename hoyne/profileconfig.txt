@@ -10,12 +10,27 @@ Microsoft Teams
 Photoshop
 Illustrator
 InDesign
-Adobe Premiere Pro 2024/Adobe Premiere Pro 2024
+Premiere Pro
 Connect Fonts
 Figma
 Slack
 zoom.us
 FortiClient
+
+
+Google Chrome
+Microsoft Word
+Microsoft Excel
+Microsoft PowerPoint
+Microsoft OneNote
+Photoshop
+Illustrator
+InDesign
+Microsoft Teams
+Slack
+zoom.us
+FortiClient
+Spotify
 
 usersettings:
 .GlobalPreferences.plist AppleAccentColor -int 1
